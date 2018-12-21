@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import com.geetest.bankcardocr.camera.OverlayView;
 import com.geetest.bankcardocr.camera.SenseCamera;
-import com.geetest.gtfacedemo.R;
 import com.geetest.bankcardocr.camera.SenseCameraPreview;
 import com.geetest.oneperson.CardApi;
 import com.geetest.oneperson.bankcard.BankCardInfo;
