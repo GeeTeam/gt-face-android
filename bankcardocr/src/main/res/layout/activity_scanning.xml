@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.geetest.gtfacedemo.camera.SenseCameraPreview
+    <com.geetest.bankcardocr.camera.SenseCameraPreview
         android:id="@+id/camera_preview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.geetest.gtfacedemo.camera.OverlayView
+    <com.geetest.bankcardocr.camera.OverlayView
         android:id="@+id/overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

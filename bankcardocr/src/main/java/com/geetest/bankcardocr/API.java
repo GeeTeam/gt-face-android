@@ -1,4 +1,4 @@
-package com.geetest.gtfacedemo;
+package com.geetest.bankcardocr;
 
 /**
  * Created by 谷闹年 on 2018/4/19.

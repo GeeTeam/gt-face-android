@@ -1,4 +1,4 @@
-package com.geetest.gtfacedemo.camera;
+package com.geetest.bankcardocr.camera;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

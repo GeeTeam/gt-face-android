@@ -1,4 +1,4 @@
-package com.geetest.gtfacedemo;
+package com.geetest.bankcardocr;
 
 import android.Manifest;
 import android.app.Activity;
@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.geetest.gtfacedemo.R;
 import com.geetest.oneperson.CardApi;
 
 import java.util.ArrayList;

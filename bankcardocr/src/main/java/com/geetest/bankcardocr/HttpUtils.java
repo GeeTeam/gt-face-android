@@ -1,4 +1,4 @@
-package com.geetest.gtfacedemo;
+package com.geetest.bankcardocr;
 
 
 import android.util.Log;
@@ -9,11 +9,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.security.cert.CertificateException;
-import java.security.cert.X509Certificate;
 import java.util.Map;
-
-import javax.net.ssl.X509TrustManager;
 
 /**
  * Created by 谷闹年 on 2017/8/30.

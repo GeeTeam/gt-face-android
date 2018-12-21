@@ -1,4 +1,4 @@
-package com.geetest.gtfacedemo.camera;
+package com.geetest.bankcardocr.camera;
 
 import android.content.Context;
 import android.content.res.Configuration;

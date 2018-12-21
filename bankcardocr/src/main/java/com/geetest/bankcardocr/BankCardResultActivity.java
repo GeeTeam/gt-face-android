@@ -1,8 +1,10 @@
-package com.geetest.gtfacedemo;
+package com.geetest.bankcardocr;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.geetest.gtfacedemo.R;
 
 public class BankCardResultActivity extends AppCompatActivity {
 

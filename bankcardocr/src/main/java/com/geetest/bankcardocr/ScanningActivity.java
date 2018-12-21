@@ -1,19 +1,17 @@
-package com.geetest.gtfacedemo;
+package com.geetest.bankcardocr;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.hardware.Camera;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.geetest.gtfacedemo.camera.OverlayView;
-import com.geetest.gtfacedemo.camera.SenseCamera;
-import com.geetest.gtfacedemo.camera.SenseCameraPreview;
+import com.geetest.bankcardocr.camera.OverlayView;
+import com.geetest.bankcardocr.camera.SenseCamera;
+import com.geetest.gtfacedemo.R;
+import com.geetest.bankcardocr.camera.SenseCameraPreview;
 import com.geetest.oneperson.CardApi;
 import com.geetest.oneperson.bankcard.BankCardInfo;
 import com.geetest.oneperson.code.CardType;
