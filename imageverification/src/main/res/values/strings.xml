@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">ImageVerification</string>
+    <string name="app_name">照片比对</string>
+    <string name="scan_front">"上传照片"</string>
+    <string name="app_name_with_client">"照片比对 v"%s"</string>
+    <string name="copyright">"Powered by Geetest</string>
+    <string name="canceled">"取消扫描"</string>
+    <string name="error_camera">"相机或读写SD卡授权失败，请在设置中打开相机和读写SD卡权限"</string>
+    <string name="btn_sumbit">"提交"</string>
+    <string name="btn_select_first_image">"选择第一张照片"</string>
+    <string name="btn_select_second_image">"选择第二张照片"</string>
 </resources>

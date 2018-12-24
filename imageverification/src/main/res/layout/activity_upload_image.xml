@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geetest.imageverification.UploadImageActivity">
+
+    <Button
+        android:id="@+id/btn_first_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/btn_second_image"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_selecter"
+        android:text="@string/btn_select_first_image" />
+
+    <Button
+        android:id="@+id/btn_second_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_selecter"
+        android:text="@string/btn_select_second_image" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_second_image"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_selecter"
+        android:text="@string/btn_sumbit" />
+</RelativeLayout>

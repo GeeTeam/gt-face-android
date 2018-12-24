@@ -1,1 +1,1 @@
-include  ':idcardocr', ':passportocr', ':facelivenessdetection', ':slientimageverification', ':imageverification', ':imageidnumber', ':slientidnumber'
+include ':idcardocr', ':passportocr', ':facelivenessdetection', ':slientimageverification', ':imageverification', ':imageidnumber', ':slientidnumber', ':bankcardocr'

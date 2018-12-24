@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <View
+        android:id="@+id/view_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/et_name"
+        android:background="@color/divider" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_divider_2"
+        android:hint="@string/edt_name" />
+
+    <View
+        android:id="@+id/view_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/et_idcard"
+        android:background="@color/divider" />
+
+    <EditText
+        android:id="@+id/et_idcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_divider_3"
+        android:hint="@string/edt_idcard" />
+
+    <View
+        android:id="@+id/view_divider_3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/btn_image"
+        android:background="@color/divider" />
+
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_selecter"
+        android:text="@string/btn_sumbit" />
+</RelativeLayout>

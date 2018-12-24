@@ -61,7 +61,7 @@ sdk三方依赖|无
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permissio  android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission  android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
 ```

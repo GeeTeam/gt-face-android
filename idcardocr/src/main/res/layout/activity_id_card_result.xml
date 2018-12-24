@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <View
+        android:id="@+id/view_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="#aaaaaa" />
+
+    <TextView
+        android:id="@+id/txt_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_divider_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="姓名"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txt_name_title"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/txt_name_title"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/view_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/txt_name_title"
+        android:layout_marginTop="10dp"
+        android:background="#aaaaaa" />
+    <TextView
+        android:id="@+id/txt_sex_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/view_divider_2"
+        android:text="性别"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_sex_title"
+        android:layout_alignTop="@id/txt_sex_title"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/view_divider_3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_sex_title"
+        android:background="#aaaaaa" />
+    <TextView
+        android:id="@+id/txt_nation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/view_divider_3"
+        android:text="民族"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_nation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_nation_title"
+        android:layout_alignTop="@id/txt_nation_title"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/view_divider_4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_nation_title"
+        android:background="#aaaaaa" />
+    <TextView
+        android:id="@+id/txt_birthday_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/view_divider_4"
+        android:text="出生"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_birthday_title"
+        android:layout_alignTop="@id/txt_birthday_title"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/view_divider_5"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_birthday_title"
+        android:background="#aaaaaa" />
+
+    <TextView
+        android:id="@+id/txt_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/view_divider_5"
+        android:text="地址"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_address_title"
+        android:layout_alignTop="@id/txt_address_title"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/view_divider_6"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_address_title"
+        android:background="#aaaaaa" />
+
+    <TextView
+        android:id="@+id/txt_number_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/view_divider_6"
+        android:text="号码"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_number_title"
+        android:layout_alignTop="@id/txt_number_title"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/view_divider_7"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_number"
+        android:background="#aaaaaa" />
+
+
+
+    <TextView
+        android:id="@+id/txt_timelimit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/view_divider_7"
+        android:text="有效期限"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_timelimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_timelimit_title"
+        android:layout_alignTop="@id/txt_timelimit_title"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/view_divider_8"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_timelimit_title"
+        android:background="#aaaaaa" />
+    <TextView
+        android:id="@+id/txt_authority_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/view_divider_8"
+        android:text="签发机关"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_authority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_authority_title"
+        android:layout_alignTop="@id/txt_authority_title"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/view_divider_9"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_authority_title"
+        android:background="#aaaaaa" />
+</RelativeLayout>
