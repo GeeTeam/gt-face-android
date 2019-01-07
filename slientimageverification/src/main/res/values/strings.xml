@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">照片视频对比</string>
-    <string name="scan_front">"上传文件"</string>
-    <string name="app_name_with_client">"照片视频对比 v"%s"</string>
+    <string name="scan_front_slient_verification">"上传文件"</string>
+    <string name="app_name_with_client_slient_verification">"照片视频对比 v"%s"</string>
     <string name="copyright">"Powered by Geetest</string>
     <string name="canceled">"取消扫描"</string>
     <string name="error_camera">"相机或读写SD卡授权失败，请在设置中打开相机和读写SD卡权限"</string>

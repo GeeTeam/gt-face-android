@@ -1,20 +1,41 @@
-apply plugin: 'com.android.application'
+if (isComponent.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
 
 android {
     compileSdkVersion 26
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.geetest.idcardocr"
+        if (isComponent.toBoolean()) {
+            applicationId "com.geetest.idcardocr"
+        }
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            if (isComponent.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+            }
         }
     }
 }
@@ -23,5 +44,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
-    compile files('../sdk/geetest_g4_android_v0.0.8_20181224.jar')
+    compile files(sdkPath.toString())
+    compile 'com.alibaba:arouter-api:1.4.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
 }

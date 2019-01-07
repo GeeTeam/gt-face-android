@@ -143,7 +143,7 @@ public class CameraHelper {
     }
 
     /**
-     * Creates a media file in the {@code Environment.DIRECTORY_PICTURES} directory. The directory
+     * Creates file media file in the {@code Environment.DIRECTORY_PICTURES} directory. The directory
      * is persistent and available to other applications like gallery.
      *
      * @param type Media type. Can be video or image.
@@ -169,7 +169,7 @@ public class CameraHelper {
             }
         }
 
-        // Create a media file name
+        // Create file media file name
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         File mediaFile;
         if (type == MEDIA_TYPE_IMAGE){

@@ -13,7 +13,7 @@ public class ResultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result);
+        setContentView(R.layout.activity_result_passport);
         ((TextView) findViewById(R.id.txt_tv1)).setText(
                 getIntent().getStringExtra(UploadImageActivity.rfidMrz)
         );

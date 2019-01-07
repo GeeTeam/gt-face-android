@@ -4,7 +4,6 @@ package com.geetest.slientidnumber;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
@@ -19,7 +18,7 @@ public class NumberActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_number);
+        setContentView(R.layout.activity_number_slient_idnumber);
         editTextIdCard = (EditText) findViewById(R.id.et_idcard);
         editTextName = (EditText) findViewById(R.id.et_name);
         findViewById(R.id.btn_image).setOnClickListener(new View.OnClickListener() {

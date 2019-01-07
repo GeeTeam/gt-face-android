@@ -9,7 +9,7 @@ public class ResultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result);
+        setContentView(R.layout.activity_result_slient_idnumber);
 
         ((TextView) findViewById(R.id.txt_pass)).setText(
                 getIntent().getBooleanExtra(ClientActivity.PASSED, false) + "");

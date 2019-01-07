@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">视频身份核验</string>
-    <string name="scan_front">"身份填写"</string>
-    <string name="app_name_with_client">"视频身份核验 v"%s"</string>
+    <string name="scan_front_slient_idnumber">"身份填写"</string>
+    <string name="app_name_with_client_slient_idnumber">"视频身份核验 v"%s"</string>
     <string name="copyright">"Powered by Geetest</string>
     <string name="canceled">"取消扫描"</string>
     <string name="error_camera">"相机或读写SD卡授权失败，请在设置中打开相机和读写SD卡权限"</string>

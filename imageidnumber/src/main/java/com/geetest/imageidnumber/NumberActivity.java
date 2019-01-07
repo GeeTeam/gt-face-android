@@ -42,7 +42,7 @@ public class NumberActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_number);
+        setContentView(R.layout.activity_number_imag_idnumber);
         editTextIdCard = (EditText) findViewById(R.id.et_idcard);
         editTextName = (EditText) findViewById(R.id.et_name);
         cardApi = new CardApi(getApplicationContext());

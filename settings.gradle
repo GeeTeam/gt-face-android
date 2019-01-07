@@ -1,1 +1,1 @@
-include ':idcardocr', ':passportocr', ':facelivenessdetection', ':slientimageverification', ':imageverification', ':imageidnumber', ':slientidnumber', ':bankcardocr'
+include ':idcardocr', ':passportocr', ':facelivenessdetection', ':slientimageverification', ':imageverification', ':imageidnumber', ':slientidnumber', ':bankcardocr', ':g4project'

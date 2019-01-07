@@ -45,15 +45,12 @@ public class ClientActivity extends AppCompatActivity {
     public static final String LIVENESS_SCORE = "liveness_score";
     public static final String PASSED = "passed";
     public static final String VERIFICATION_SCORE = "verification_score";
-    /**
-     * 结果验证
-     */
-    private static final String CARD_RESULT = "https://tectapi.geetest.com/result";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_client);
+        setContentView(R.layout.activity_client_slient_verification);
         cardApi = new CardApi(getApplicationContext());
         cardApi.init(new BaseCardListener() {
             @Override
@@ -68,7 +65,7 @@ public class ClientActivity extends AppCompatActivity {
                     public void run() {
                         Map<String, Object> map = new HashMap<>(4);
                         map.put("token", token);
-                        String httpResult = HttpUtils.postHttpOfMap(CARD_RESULT, map, 5000);
+                        String httpResult = HttpUtils.postHttpOfMap(API.CARD_RESULT, map, 5000);
                         Log.i("SSSSSSSSS",httpResult);
                         try {
                             JSONObject data = new JSONObject(httpResult);
@@ -150,46 +147,44 @@ public class ClientActivity extends AppCompatActivity {
             float downY = 0;
             int action = event.getAction();
 
-            switch (v.getId()) {
-                case R.id.main_press_control: {
-                    switch (action) {
-                        case MotionEvent.ACTION_DOWN:
-                            mediaUtils.record();
-                            startView();
-                            ret = true;
-                            break;
-                        case MotionEvent.ACTION_UP:
-                            if (!isCancel) {
-                                if (mProgress == 0) {
-                                    stopView(false);
-                                    break;
-                                }
-                                if (mProgress < 10) {
-                                    //时间太短不保存
-                                    mediaUtils.stopRecordUnSave();
-                                    Toast.makeText(ClientActivity.this, "时间太短", Toast.LENGTH_SHORT).show();
-                                    stopView(false);
-                                    break;
-                                }
-                                //停止录制
-                                mediaUtils.stopRecordSave();
-                                stopView(true);
-                            } else {
-                                //现在是取消状态,不保存
-                                mediaUtils.stopRecordUnSave();
-                                Toast.makeText(ClientActivity.this, "取消保存", Toast.LENGTH_SHORT).show();
+            int i = v.getId();
+            if (i == R.id.main_press_control) {
+                switch (action) {
+                    case MotionEvent.ACTION_DOWN:
+                        mediaUtils.record();
+                        startView();
+                        ret = true;
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        if (!isCancel) {
+                            if (mProgress == 0) {
                                 stopView(false);
+                                break;
                             }
-                            ret = false;
-                            break;
-                        case MotionEvent.ACTION_MOVE:
-                            float currentY = event.getY();
-                            isCancel = downY - currentY > 10;
-                            moveView();
-                            break;
-                    }
+                            if (mProgress < 10) {
+                                //时间太短不保存
+                                mediaUtils.stopRecordUnSave();
+                                Toast.makeText(ClientActivity.this, "时间太短", Toast.LENGTH_SHORT).show();
+                                stopView(false);
+                                break;
+                            }
+                            //停止录制
+                            mediaUtils.stopRecordSave();
+                            stopView(true);
+                        } else {
+                            //现在是取消状态,不保存
+                            mediaUtils.stopRecordUnSave();
+                            Toast.makeText(ClientActivity.this, "取消保存", Toast.LENGTH_SHORT).show();
+                            stopView(false);
+                        }
+                        ret = false;
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        float currentY = event.getY();
+                        isCancel = downY - currentY > 10;
+                        moveView();
+                        break;
                 }
-
             }
             return ret;
         }

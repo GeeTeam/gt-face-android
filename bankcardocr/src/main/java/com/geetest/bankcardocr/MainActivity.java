@@ -10,11 +10,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.geetest.oneperson.CardApi;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Route(path = "/bankcardocr/activity")
 public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_CODE_SCAN = 2;
     public static final int CARD_ORIENTATION_VERTICAL = 1;
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_bankcardocr);
         ((TextView) findViewById(R.id.txt_app_name)).setText(
                 getString(R.string.app_name_with_version, CardApi.getVersion()));
         ((TextView) findViewById(R.id.txt_copyright)).setText(getString(R.string.copyright));

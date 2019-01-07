@@ -46,7 +46,7 @@ public class ScanningActivity extends AppCompatActivity implements Camera.Previe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scanning);
+        setContentView(R.layout.activity_scanning_bankcard);
         int cardOrientation = getIntent().getIntExtra(EXTRA_CARD_ORIENTATION, CARD_ORIENTATION_HORIZONTAL);
         cardApi = new CardApi(this);
         cardApi.init(new BaseCardListener() {

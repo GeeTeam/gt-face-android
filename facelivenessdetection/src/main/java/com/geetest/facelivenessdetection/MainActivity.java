@@ -10,20 +10,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.geetest.oneperson.CardApi;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Route(path = "/liveness/activity")
 public class MainActivity extends AppCompatActivity {
     private TextView mTipsView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_liveness);
         mTipsView = (TextView) findViewById(R.id.txt_tips);
         ((TextView) findViewById(R.id.txt_app_name)).setText(
-                getString(R.string.app_name_with_client, CardApi.getVersion()));
+                getString(R.string.app_name_with_client_liveness, CardApi.getVersion()));
         ((TextView) findViewById(R.id.txt_copyright)).setText(getString(R.string.copyright));
         findViewById(R.id.txt_scan).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geetest.g4project.MainActivity">
+
+    <View
+        android:id="@+id/view_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/bankcardocr_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_divider_1"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="银行卡Ocr"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/bankcardocr_tv"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/idcardocr_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_divider_2"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="身份证Ocr"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_divider_3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/idcardocr_tv"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/liveness_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_divider_3"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="静默活体检测"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_divider_4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/liveness_tv"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/passportocr_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_divider_4"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="护照OCR"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_divider_5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/passportocr_tv"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/imageverification_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_divider_5"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="人脸对比-图片与图片对比"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_divider_6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/imageverification_tv"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/slientimageverification_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_divider_6"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="人脸对比-视频与图片对比"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_divider_7"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/slientimageverification_tv"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/imageidnumber_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_divider_7"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="人脸身份核验-图片与身份核验"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_divider_8"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/imageidnumber_tv"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/slientimageidnumber_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_divider_8"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="人脸身份核验-视频与身份核验"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_divider_9"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/slientimageidnumber_tv"
+        android:background="@color/divider" />
+</RelativeLayout>

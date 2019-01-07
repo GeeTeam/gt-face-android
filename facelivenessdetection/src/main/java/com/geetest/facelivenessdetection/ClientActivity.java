@@ -1,11 +1,8 @@
 package com.geetest.facelivenessdetection;
 
-import android.Manifest;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -50,7 +47,7 @@ public class ClientActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_client);
+        setContentView(R.layout.activity_client_liveness);
         cardApi = new CardApi(getApplicationContext());
         cardApi.init(new BaseCardListener() {
             @Override
@@ -145,46 +142,44 @@ public class ClientActivity extends AppCompatActivity {
             float downY = 0;
             int action = event.getAction();
 
-            switch (v.getId()) {
-                case R.id.main_press_control: {
-                    switch (action) {
-                        case MotionEvent.ACTION_DOWN:
-                            mediaUtils.record();
-                            startView();
-                            ret = true;
-                            break;
-                        case MotionEvent.ACTION_UP:
-                            if (!isCancel) {
-                                if (mProgress == 0) {
-                                    stopView(false);
-                                    break;
-                                }
-                                if (mProgress < 10) {
-                                    //时间太短不保存
-                                    mediaUtils.stopRecordUnSave();
-                                    Toast.makeText(ClientActivity.this, "时间太短", Toast.LENGTH_SHORT).show();
-                                    stopView(false);
-                                    break;
-                                }
-                                //停止录制
-                                mediaUtils.stopRecordSave();
-                                stopView(true);
-                            } else {
-                                //现在是取消状态,不保存
-                                mediaUtils.stopRecordUnSave();
-                                Toast.makeText(ClientActivity.this, "取消保存", Toast.LENGTH_SHORT).show();
+            int i = v.getId();
+            if (i == R.id.main_press_control) {
+                switch (action) {
+                    case MotionEvent.ACTION_DOWN:
+                        mediaUtils.record();
+                        startView();
+                        ret = true;
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        if (!isCancel) {
+                            if (mProgress == 0) {
                                 stopView(false);
+                                break;
                             }
-                            ret = false;
-                            break;
-                        case MotionEvent.ACTION_MOVE:
-                            float currentY = event.getY();
-                            isCancel = downY - currentY > 10;
-                            moveView();
-                            break;
-                    }
+                            if (mProgress < 10) {
+                                //时间太短不保存
+                                mediaUtils.stopRecordUnSave();
+                                Toast.makeText(ClientActivity.this, "时间太短", Toast.LENGTH_SHORT).show();
+                                stopView(false);
+                                break;
+                            }
+                            //停止录制
+                            mediaUtils.stopRecordSave();
+                            stopView(true);
+                        } else {
+                            //现在是取消状态,不保存
+                            mediaUtils.stopRecordUnSave();
+                            Toast.makeText(ClientActivity.this, "取消保存", Toast.LENGTH_SHORT).show();
+                            stopView(false);
+                        }
+                        ret = false;
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        float currentY = event.getY();
+                        isCancel = downY - currentY > 10;
+                        moveView();
+                        break;
                 }
-
             }
             return ret;
         }

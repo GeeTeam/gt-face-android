@@ -36,7 +36,7 @@ public class UploadImageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upload_image);
+        setContentView(R.layout.activity_upload_image_verification);
 
         cardApi = new CardApi(getApplicationContext());
         cardApi.init(new BaseCardListener() {

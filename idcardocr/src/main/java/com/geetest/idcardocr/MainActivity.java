@@ -10,11 +10,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.geetest.oneperson.CardApi;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Route(path = "/idcardocr/activity")
 public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_CODE_RESULT = 1;
     private static final int REQUEST_CODE_SCAN = 2;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_idcardocr);
         ((TextView) findViewById(R.id.txt_app_name)).setText(
                 getString(R.string.app_name_with_version_ID, CardApi.getVersion()));
         ((TextView) findViewById(R.id.txt_copyright)).setText(getString(R.string.copyright));

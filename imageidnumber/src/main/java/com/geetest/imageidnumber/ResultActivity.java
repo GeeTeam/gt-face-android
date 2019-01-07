@@ -9,7 +9,7 @@ public class ResultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result);
+        setContentView(R.layout.activity_result_imag_idnumber);
         ((TextView) findViewById(R.id.txt_score)).setText(
                 getIntent().getFloatExtra(NumberActivity.VERIFICATION_SCORE, 0.1f) + ""
         );

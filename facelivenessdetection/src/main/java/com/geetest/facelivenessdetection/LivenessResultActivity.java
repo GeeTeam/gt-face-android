@@ -9,7 +9,7 @@ public class LivenessResultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_liveness_result);
+        setContentView(R.layout.activity_liveness_result_liveness);
         ((TextView) findViewById(R.id.txt_pass)).setText(
                 getIntent().getBooleanExtra(ClientActivity.PASSED, false) + "");
         ((TextView) findViewById(R.id.txt_score)).setText(
